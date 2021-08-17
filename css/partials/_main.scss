@@ -1,0 +1,108 @@
+/*seccion main index= contenido Principal-Izquierda*/
+.contenedor__main {
+  grid-area: main;
+  overflow: hidden;
+  align-content: center;
+  margin: 5px;
+  video {
+    width: 100%;
+  }
+  li {
+    justify-content: center;
+    height: 60px;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /*Laptop*/
+  .contenedor__main {
+    margin: 15px;
+  }
+}
+
+.contenedor2__main--productos {
+  /*seccion main productos= contenedor secundario*/
+  grid-area: main;
+}
+
+.contenedor2__main--suplementos {
+  /*seccion main suplementos= contenedor secundario*/
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+
+.contenedor2__main--destacadosParrafo {
+  /*parrafo contenedor secundario*/
+  margin: 25px;
+}
+
+.contenedor__main--recetas {
+  /*seccion main recetas= contenedor secundario*/
+
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.contenedor__main--recetas2 {
+  width: max-content;
+  margin: auto;
+  text-align: start;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contenedor__main--button-l {
+  font-size: 30px;
+  margin: 30px;
+  text-align: center;
+}
+
+.contenedor2__main--parrafoReceta {
+  margin: 20px;
+  font-size: 20px;
+}
+
+.contenedor2_main--ayuda{
+    grid-area: main;
+}
+.contenedor2__main--fieldset {
+  /*seccion main ayuda= contenedor secundario*/
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  form {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+  textarea {
+    width: 200px;
+    height: 100px;
+  }
+  input {
+    width: 95px;
+    height: 20px;
+  }
+
+  #suscribite {
+    height: 15px;
+    width: 15px;
+  }
+  select {
+    width: 100px;
+
+  }
+  legend {
+    margin-bottom: 10px;
+  }
+}

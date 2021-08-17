@@ -1,0 +1,122 @@
+/* seccion aside index= contenedor Principal-derecha*/
+.contenedor__aside {
+  grid-area: aside;
+  overflow: hidden;
+  width: 100%;
+  justify-self: center;
+
+  h3 {
+    padding: 10px;
+    width: auto;
+    
+  }
+
+  h2 {
+    padding-bottom: 10px;
+    width: 150px;
+    height: 60px;
+    margin: auto;
+  }
+
+  div {
+    width: auto;
+    text-align: center;
+  }
+
+  ul {
+    width: auto;
+    li {
+      text-align: center;
+      height: 50px;
+      align-items: center;
+      margin: 10px 10px 10px 10px;
+    }
+  }
+
+  img {
+    margin: 20px;
+    height: 150px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /*Tablet*/
+  .contenedor__aside {
+    align-content: center;
+
+    h3 {
+      margin-top: 63px;
+      margin-bottom: 10px;
+      padding-right: 10px;
+      width: 90%;
+    }
+    ul {
+      width: 90%;
+      li {
+        height: 60px;
+      }
+    }
+    img {
+      margin: 10px;
+      height: 130px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /*Laptop*/
+  .contenedor__aside {
+    padding: 10px;
+
+    h3 {
+      padding: 10px;
+    }
+
+    ul {
+      width: 90%;
+      margin-left: 5px;
+
+      li {
+        display: flex;
+        height: 50px;
+        margin: 20px 10px 20px 10px;
+      }
+    }
+
+    img {
+      margin: 5px auto 5px auto;
+
+      height: 150px;
+    }
+  }
+}
+
+.contenedor2__aside--suplementos {   /* seccion aside suplementos= contenedor secundario*/
+  grid-area: main;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+}
+.contenedor2_aside--tablaSuple1 {
+  width: 100%;
+  margin: 10px;
+  align-items: flex-start;
+}
+.contenedor2_aside--tablaSuple2 {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  
+}
+
+table {
+  margin: auto;
+  margin-bottom: 5px;
+  margin-top: 5px;
+ 
+  ul {
+    li {
+      list-style-position: outside;
+    }
+  }
+}

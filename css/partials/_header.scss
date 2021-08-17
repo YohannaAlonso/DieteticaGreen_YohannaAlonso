@@ -1,0 +1,38 @@
+/*seccion header =igual para todos*/
+header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: auto 0px auto;
+  @media only screen and (min-width: 768px) {
+    /*Tablet*/
+    grid-template-columns: auto auto auto;
+  }
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "logo       title       nav"
+    "busqueda   busqueda    busqueda";
+  margin: 10px;
+
+  h1 {
+    grid-area: title;
+    visibility: hidden;
+    @media only screen and (min-width: 768px) {
+      visibility: inherit;
+    }
+    width: 80%;
+    justify-self: left;
+    align-self: center;
+  }
+  .logo {
+    grid-area: logo;
+    width: 100%;
+  }
+  nav {
+    grid-area: nav;
+    align-self: start;
+  }
+  .busqueda {
+    grid-area: busqueda;
+    margin: auto;
+  }
+}

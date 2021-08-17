@@ -1,0 +1,46 @@
+/* seccion footer= igual para todos*/
+
+footer {
+  /*Mobile*/
+  grid-area: footer;
+  width: 100%;
+
+  div {
+    text-align: center;
+    a {
+      margin: 5px;
+    }
+  }
+  iframe {
+    width: 50%;
+  }
+  textarea {
+    width: 80%;
+    height: 100px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /*Tablet*/
+  footer {
+      padding-top: 10px;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 90% 10%;
+
+    div {
+      width: fit-content;
+      text-align: justify;
+      text-align: start;
+      padding-left: 20px;
+      
+      }
+    }
+  }
+
+.footer__company {
+  grid-column: 1 / 5;
+  grid-row: 2 / 2;
+  justify-self: center;
+}
