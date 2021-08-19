@@ -210,6 +210,9 @@ header .busqueda {
 }
 
 .contenedor2__main--fieldset form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-orient: vertical;
