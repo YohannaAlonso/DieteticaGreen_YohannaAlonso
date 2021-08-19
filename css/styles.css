@@ -577,7 +577,7 @@ header #social a {
 
 .contenedor__main li {
   font-size: 2 em;
-  list-style-image: url(../../imagenes/blanco.png);
+  list-style-image: url(/imagenes/blanco.png);
   list-style-position: inside;
   text-decoration: underline;
 }
