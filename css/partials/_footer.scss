@@ -44,3 +44,9 @@ footer {
   grid-row: 2 / 2;
   justify-self: center;
 }
+
+.footer__sociales {
+  display: flex;
+  justify-content: space-around;
+  flex-direction:row;
+}

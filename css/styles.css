@@ -480,6 +480,18 @@ footer textarea {
       justify-self: center;
 }
 
+.footer__sociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 /*variables de colores*/
 h1 {
   font-size: 40px;
@@ -577,7 +589,7 @@ header #social a {
 
 .contenedor__main li {
   font-size: 2 em;
-  list-style-image: url(../../imagenes/blanco.png);
+  list-style-image: url(../imagenes/blanco.png);
   list-style-position: inside;
   text-decoration: underline;
 }
