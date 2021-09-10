@@ -1,58 +1,57 @@
-
 @mixin grilla {
-    display: grid;
-    grid-template-columns: 100%;
-        grid-template-rows: auto auto auto auto;
-        grid-template-areas: 
-                    "header"
-                    "main"
-                     "aside"
-                    "section2"
-                    "footer";
-        @media only screen and (min-width: 768px){
-            grid-template-columns:65% 35%;
-            grid-template-rows: auto auto auto auto;
-            grid-template-areas: 
-                    "header         header"
-                    "main           aside"
-                    "section2   section2"
-                    "footer         footer";
-        }
-        @media only screen and (min-width: 1024px) {
-                grid-template-columns: 65% 35%;
-                grid-template-rows: auto auto auto auto;
-                grid-template-areas: 
-                                "header         header"
-                                "main           aside"
-                                "section2   section2"
-                                "footer         footer";
-            }            
-                }          
-
-
-.contenedor{
-    @include grilla;         /*contenedor principal index*/
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "aside"
+    "section2"
+    "footer";
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: 65% 35%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "header         header"
+      "main           aside"
+      "section2   section2"
+      "footer         footer";
+  }
+  @media only screen and (min-width: 1024px) {
+    grid-template-columns: 65% 35%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "header         header"
+      "main           aside"
+      "section2   section2"
+      "footer         footer";
+  }
 }
 
-.contenedor2{/*mobile*/       /*contenedor secundario productos,ayuda,recetas,suplementos*/
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto  auto;
-    grid-template-areas: 
-                        "header"
-                        "main"
-                        "footer";
-                        }
+.contenedor {
+  @include grilla; /*contenedor principal index*/
+}
 
-   .grillarecetas{
-    @media only screen and (min-width: 768px){
-       display: grid;
-       grid-template-columns:40% 20% 40%;
-       grid-template-rows: 100%;
-       align-content: center;
-       width: 750px;
-    }
-    @media only screen and (min-width: 1024px){
-        width: 100%;
-    }
-   }                     
+.contenedor2 {
+  /*mobile*/ /*contenedor secundario productos,ayuda,recetas,suplementos*/
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+.grillarecetas {
+  @media only screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 100%;
+    align-content: center;
+    width: 750px;
+  }
+  @media only screen and (min-width: 1024px) {
+    width: 100%;
+  }
+}

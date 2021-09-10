@@ -4,11 +4,7 @@ $greenLime: #88c425;
 $greenGrellow: #bef202;
 $greenWhite: #eafde6;
 
-$headings: (/*mapa de headings*/ 
-h1: 40px, 
-h2: 30px, 
-h3: 20px, 
-h4: 16px);
+$headings: (/*mapa de headings*/ h1: 40px, h2: 30px, h3: 20px, h4: 16px);
 
 @each $heading, $size in $headings {
   #{$heading} {
@@ -61,8 +57,9 @@ header {
     a {
       border: none;
       margin-left: 3px;
-      @media only screen and (min-width: 768px){
-      margin-left: 20px;}
+      @media only screen and (min-width: 768px) {
+        margin-left: 20px;
+      }
     }
   }
 }
@@ -117,10 +114,8 @@ header {
     background-color: $greenWhite;
     color: $greenDark;
     margin-bottom: 16px;
-   
-    font-size: 25px;
-    
 
+    font-size: 25px;
   }
 }
 .animacionPrincipal {
@@ -170,23 +165,23 @@ header {
   margin-top: 40px;
 }
 
-.contenedor2__main--cards{
+.contenedor2__main--cards {
   font-size: 14px;
-  h5{
+  h5 {
     font-size: 14px;
   }
-  a{
-    font-size:14px;
+  a {
+    font-size: 14px;
   }
-  @media only screen and (min-width: 768px){
+  @media only screen and (min-width: 768px) {
     font-size: 16px;
-    h5{
+    h5 {
       font-size: 16px;
     }
-    a{
-      font-size:16px;
+    a {
+      font-size: 16px;
     }
-  } 
+  }
 }
 
 table {
@@ -206,16 +201,15 @@ table {
   td {
     color: $greenDark;
   }
-      li {
-      color: $greenDark;
-      padding:0px;
-      list-style: none;
-    }
-    li::before {
-      content: "• ";
-      color:$greenWhite; /* color viñeta */
-    }
-  
+  li {
+    color: $greenDark;
+    padding: 0px;
+    list-style: none;
+  }
+  li::before {
+    content: "• ";
+    color: $greenWhite; /* color viñeta */
+  }
 }
 
 .contenedor__main--recetas {
@@ -253,13 +247,12 @@ table {
   color: $greenWhite;
 }
 .contenedor__main--recetas2 {
-  
   border: solid 3px $greenGrellow;
   font-size: 30px;
-  @media only screen and (min-width: 768px){
+  @media only screen and (min-width: 768px) {
     font-size: 20px;
   }
-  ul{
+  ul {
     padding: 0;
   }
   li {
@@ -268,24 +261,23 @@ table {
   }
   a {
     font-size: 20px;
-    @media only screen and (min-width: 768px){
+    @media only screen and (min-width: 768px) {
       font-size: 15px;
     }
     color: $greenGrellow;
     padding-right: 10px;
-    @media only screen and (min-width: 768px){
+    @media only screen and (min-width: 768px) {
       padding: 0px;
     }
   }
 }
 .contenedor__main--recetas3 {
-  
   border: solid 3px $greenGrellow;
   font-size: 30px;
-  @media only screen and (min-width: 768px){
+  @media only screen and (min-width: 768px) {
     font-size: 20px;
   }
-  ul{
+  ul {
     padding: 0;
   }
   li {
@@ -294,12 +286,12 @@ table {
   }
   a {
     font-size: 20px;
-    @media only screen and (min-width: 768px){
+    @media only screen and (min-width: 768px) {
       font-size: 15px;
     }
     color: $greenGrellow;
     padding-right: 10px;
-    @media only screen and (min-width: 768px){
+    @media only screen and (min-width: 768px) {
       padding: 0px;
     }
   }
@@ -329,10 +321,9 @@ table {
   select {
     border: solid 5px $greenWhite;
   }
-  
 }
 
-.contenedor2__main--parrafoAyuda{
+.contenedor2__main--parrafoAyuda {
   padding: 10px;
   margin: 5px 5px 30px 5px;
   color: $greenWhite;

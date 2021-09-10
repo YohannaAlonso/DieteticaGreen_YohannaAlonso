@@ -46,15 +46,17 @@
 
   margin: auto;
   width: 80%;
-  @media only screen and (min-width: 768px){
-    width: 65%;}
+  @media only screen and (min-width: 768px) {
+    width: 65%;
+  }
   padding: 20px;
   margin-bottom: 30px;
   margin-top: 30px;
 }
 .contenedor__main--recetas2 {
-  @media only screen and (min-width: 768px){
-    width: 50%;}
+  @media only screen and (min-width: 768px) {
+    width: 50%;
+  }
   text-align: start;
 }
 
@@ -77,15 +79,16 @@
   grid-area: main;
   display: flex;
   flex-direction: column;
-  @media only screen and (min-width: 768px){
-  flex-direction: row;
-}
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 .contenedor2__main--fieldset {
   /*seccion main ayuda= contenedor secundario*/
-  margin:10px;
-  @media only screen and (min-width: 768px){
-  width: 50%;}
+  margin: 10px;
+  @media only screen and (min-width: 768px) {
+    width: 50%;
+  }
   form {
     display: flex;
     justify-content: space-around;
