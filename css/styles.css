@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .contenedor {
   display: -ms-grid;
   display: grid;
@@ -41,6 +42,26 @@
       grid-template-areas: "header" "main" "footer";
 }
 
+@media only screen and (min-width: 768px) {
+  .grillarecetas {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% 20% 40%;
+        grid-template-columns: 40% 20% 40%;
+    -ms-grid-rows: 100%;
+        grid-template-rows: 100%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 750px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .grillarecetas {
+    width: 100%;
+  }
+}
+
 /*seccion header =igual para todos*/
 header {
   -ms-grid-row: 1;
@@ -50,8 +71,8 @@ header {
   display: grid;
   -ms-grid-columns: auto 0px auto;
       grid-template-columns: auto 0px auto;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  -ms-grid-rows: auto 100px;
+      grid-template-rows: auto 100px;
       grid-template-areas: "logo       title       nav" "busqueda   busqueda    busqueda";
   margin: 10px;
 }
@@ -169,20 +190,30 @@ header .busqueda {
 .contenedor__main--recetas {
   /*seccion main recetas= contenedor secundario*/
   margin: auto;
-  width: 50%;
+  width: 80%;
   padding: 20px;
   margin-bottom: 30px;
   margin-top: 30px;
 }
 
+@media only screen and (min-width: 768px) {
+  .contenedor__main--recetas {
+    width: 65%;
+  }
+}
+
 .contenedor__main--recetas2 {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin: auto;
   text-align: start;
-  padding-top: 20px;
-  padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .contenedor__main--recetas2 {
+    width: 50%;
+  }
+}
+
+.contenedor__main--recetas3 {
+  text-align: start;
 }
 
 .contenedor__main--button-l {
@@ -200,13 +231,33 @@ header .busqueda {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: main;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .contenedor2_main--ayuda {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .contenedor2__main--fieldset {
   /*seccion main ayuda= contenedor secundario*/
-  margin-left: auto;
-  margin-right: auto;
-  width: 300px;
+  margin: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .contenedor2__main--fieldset {
+    width: 50%;
+  }
 }
 
 .contenedor2__main--fieldset form {
@@ -227,20 +278,22 @@ header .busqueda {
 .contenedor2__main--fieldset textarea {
   width: 200px;
   height: 100px;
+  margin: 5px;
 }
 
 .contenedor2__main--fieldset input {
-  width: 95px;
-  height: 20px;
+  width: 200px;
+  height: 30px;
 }
 
 .contenedor2__main--fieldset #suscribite {
-  height: 15px;
-  width: 15px;
+  height: 20px;
+  width: 20px;
 }
 
 .contenedor2__main--fieldset select {
-  width: 100px;
+  width: 150px;
+  margin: 10px;
 }
 
 .contenedor2__main--fieldset legend {
@@ -293,6 +346,11 @@ header .busqueda {
   height: 150px;
 }
 
+.contenedor__aside #sale {
+  margin: 5px;
+  height: 300px;
+}
+
 @media only screen and (min-width: 768px) {
   /*Tablet*/
   .contenedor__aside {
@@ -303,7 +361,7 @@ header .busqueda {
     margin-top: 63px;
     margin-bottom: 10px;
     padding-right: 10px;
-    width: 90%;
+    width: 100%;
   }
   .contenedor__aside ul {
     width: 90%;
@@ -314,6 +372,9 @@ header .busqueda {
   .contenedor__aside img {
     margin: 10px;
     height: 130px;
+  }
+  .contenedor__aside #sale {
+    height: 250px;
   }
 }
 
@@ -338,7 +399,10 @@ header .busqueda {
   }
   .contenedor__aside img {
     margin: 5px auto 5px auto;
-    height: 150px;
+    height: 170px;
+  }
+  .contenedor__aside #sale {
+    height: 350x;
   }
 }
 
@@ -367,7 +431,7 @@ header .busqueda {
 }
 
 .contenedor2_aside--tablaSuple2 {
-  width: 80%;
+  width: 90%;
   height: auto;
   margin: auto;
 }
@@ -376,10 +440,6 @@ table {
   margin: auto;
   margin-bottom: 5px;
   margin-top: 5px;
-}
-
-table ul li {
-  list-style-position: outside;
 }
 
 /* seccion secundario index= carrusel*/
@@ -578,7 +638,13 @@ header a:hover {
 
 header #social a {
   border: none;
-  margin-left: 20px;
+  margin-left: 3px;
+}
+
+@media only screen and (min-width: 768px) {
+  header #social a {
+    margin-left: 20px;
+  }
 }
 
 /*seccion main index= contenedor Principal-izquerda*/
@@ -640,6 +706,7 @@ header #social a {
   background-color: #eafde6;
   color: #1b676b;
   margin-bottom: 16px;
+  font-size: 25px;
 }
 
 .animacionPrincipal {
@@ -714,15 +781,39 @@ header #social a {
 .contenedor2__main--parrafo {
   background-image: none;
   background-color: #88c425;
-  border: dotted 3px #1b676b;
-  margin-top: 20px;
+  border: solid 3px #1b676b;
+  margin-top: 40px;
+}
+
+.contenedor2__main--cards {
+  font-size: 14px;
+}
+
+.contenedor2__main--cards h5 {
+  font-size: 14px;
+}
+
+.contenedor2__main--cards a {
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+  .contenedor2__main--cards {
+    font-size: 16px;
+  }
+  .contenedor2__main--cards h5 {
+    font-size: 16px;
+  }
+  .contenedor2__main--cards a {
+    font-size: 16px;
+  }
 }
 
 table {
   background-color: #88c425;
-  font-size: 16px;
+  font-size: 12px;
   text-align: center;
-  border: solid 5px green;
+  border: solid 1px green;
 }
 
 @media only screen and (min-width: 768px) {
@@ -732,19 +823,27 @@ table {
 }
 
 table th {
-  color: #1b676b;
+  color: #eafde6;
 }
 
 table tr {
-  color: #eafde6;
+  color: #1b676b;
 }
 
 table td {
-  color: #eafde6;
+  color: #1b676b;
 }
 
-table ul li {
+table li {
+  color: #1b676b;
+  padding: 0px;
+  list-style: none;
+}
+
+table li::before {
+  content: "• ";
   color: #eafde6;
+  /* color viñeta */
 }
 
 .contenedor__main--recetas {
@@ -789,6 +888,16 @@ table ul li {
   font-size: 30px;
 }
 
+@media only screen and (min-width: 768px) {
+  .contenedor__main--recetas2 {
+    font-size: 20px;
+  }
+}
+
+.contenedor__main--recetas2 ul {
+  padding: 0;
+}
+
 .contenedor__main--recetas2 li {
   list-style: none;
   margin: 10px;
@@ -800,11 +909,61 @@ table ul li {
   padding-right: 10px;
 }
 
+@media only screen and (min-width: 768px) {
+  .contenedor__main--recetas2 a {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .contenedor__main--recetas2 a {
+    padding: 0px;
+  }
+}
+
+.contenedor__main--recetas3 {
+  border: solid 3px #bef202;
+  font-size: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .contenedor__main--recetas3 {
+    font-size: 20px;
+  }
+}
+
+.contenedor__main--recetas3 ul {
+  padding: 0;
+}
+
+.contenedor__main--recetas3 li {
+  list-style: none;
+  margin: 10px;
+}
+
+.contenedor__main--recetas3 a {
+  font-size: 20px;
+  color: #bef202;
+  padding-right: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .contenedor__main--recetas3 a {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .contenedor__main--recetas3 a {
+    padding: 0px;
+  }
+}
+
 .contenedor2__main--fieldset {
   /*seccion main ayuda= contenedor secundario*/
-  padding: 5;
+  padding: 5px;
   color: #eafde6;
-  font-size: 15px;
+  font-size: 18px;
   text-align: left;
   text-transform: capitalize;
   border: solid 2px #1b676b;
@@ -830,8 +989,13 @@ table ul li {
   border: solid 5px #eafde6;
 }
 
-.contenedor2__main--fieldset legend {
-  font-size: 30px;
+.contenedor2__main--parrafoAyuda {
+  padding: 10px;
+  margin: 5px 5px 30px 5px;
+  color: #eafde6;
+  font-size: 20px;
+  text-align: left;
+  border: solid 2px #1b676b;
 }
 
 /* seccion FOOTER= igual para todas las seciones*/

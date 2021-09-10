@@ -23,7 +23,7 @@ footer {
 @media only screen and (min-width: 768px) {
   /*Tablet*/
   footer {
-      padding-top: 10px;
+    padding-top: 10px;
     grid-area: footer;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -34,10 +34,9 @@ footer {
       text-align: justify;
       text-align: start;
       padding-left: 20px;
-      
-      }
     }
   }
+}
 
 .footer__company {
   grid-column: 1 / 5;
@@ -48,5 +47,5 @@ footer {
 .footer__sociales {
   display: flex;
   justify-content: space-around;
-  flex-direction:row;
+  flex-direction: row;
 }

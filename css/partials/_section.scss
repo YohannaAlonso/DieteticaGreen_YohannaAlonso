@@ -1,36 +1,38 @@
 /* seccion secundario index= carrusel*/
-.contenedor__section2{ 
-    grid-area: section2;
-    margin: auto;
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+.contenedor__section2 {
+  grid-area: section2;
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 
-    img{
-        height: 200px;
-    }
+  img {
+    height: 200px;
   }
+}
 
-@media only screen and (min-width: 768px) { /*Tablet*/
+@media only screen and (min-width: 768px) {
+  /*Tablet*/
 
-.contenedor__section2{ 
+  .contenedor__section2 {
     width: 500px;
     margin-bottom: 20px;
     margin-top: 20px;
 
-    img{
-        height: 300px;
+    img {
+      height: 300px;
     }
-    }
+  }
 }
 
-@media only screen and (min-width: 1024px) { /*Laptop*/
+@media only screen and (min-width: 1024px) {
+  /*Laptop*/
 
-    .contenedor__section2{ 
-        width: 700px;
-        img{
-            height: 400px;
-        }
-        }
+  .contenedor__section2 {
+    width: 700px;
+    img {
+      height: 400px;
+    }
+  }
 }

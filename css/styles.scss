@@ -6,14 +6,13 @@
 @import "partials/footer";
 @import "partials/estilos";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
 
-*{margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-        }
-
-body{
-    background:linear-gradient(90deg,$greenDark,$greenLime);
- }
-
+body {
+  background: linear-gradient(90deg, $greenDark, $greenLime);
+}

@@ -43,3 +43,16 @@
                         "main"
                         "footer";
                         }
+
+   .grillarecetas{
+    @media only screen and (min-width: 768px){
+       display: grid;
+       grid-template-columns:40% 20% 40%;
+       grid-template-rows: 100%;
+       align-content: center;
+       width: 750px;
+    }
+    @media only screen and (min-width: 1024px){
+        width: 100%;
+    }
+   }                     

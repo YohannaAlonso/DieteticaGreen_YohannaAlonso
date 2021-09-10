@@ -7,7 +7,7 @@ header {
     /*Tablet*/
     grid-template-columns: auto auto auto;
   }
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto 100px;
   grid-template-areas:
     "logo       title       nav"
     "busqueda   busqueda    busqueda";

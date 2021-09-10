@@ -36,8 +36,6 @@
   margin-bottom: 20px;
 }
 
-
-
 .contenedor2__main--destacadosParrafo {
   /*parrafo contenedor secundario*/
   margin: 25px;
@@ -47,17 +45,21 @@
   /*seccion main recetas= contenedor secundario*/
 
   margin: auto;
-  width: 50%;
+  width: 80%;
+  @media only screen and (min-width: 768px){
+    width: 65%;}
   padding: 20px;
   margin-bottom: 30px;
   margin-top: 30px;
 }
 .contenedor__main--recetas2 {
-  width: max-content;
-  margin: auto;
+  @media only screen and (min-width: 768px){
+    width: 50%;}
   text-align: start;
-  padding-top: 20px;
-  padding-bottom: 20px;
+}
+
+.contenedor__main--recetas3 {
+  text-align: start;
 }
 
 .contenedor__main--button-l {
@@ -71,14 +73,19 @@
   font-size: 20px;
 }
 
-.contenedor2_main--ayuda{
-    grid-area: main;
+.contenedor2_main--ayuda {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  @media only screen and (min-width: 768px){
+  flex-direction: row;
+}
 }
 .contenedor2__main--fieldset {
   /*seccion main ayuda= contenedor secundario*/
-  margin-left: auto;
-  margin-right: auto;
-  width: 300px;
+  margin:10px;
+  @media only screen and (min-width: 768px){
+  width: 50%;}
   form {
     display: flex;
     justify-content: space-around;
@@ -88,19 +95,20 @@
   textarea {
     width: 200px;
     height: 100px;
+    margin: 5px;
   }
   input {
-    width: 95px;
-    height: 20px;
+    width: 200px;
+    height: 30px;
   }
 
   #suscribite {
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
   }
   select {
-    width: 100px;
-
+    width: 150px;
+    margin: 10px;
   }
   legend {
     margin-bottom: 10px;
