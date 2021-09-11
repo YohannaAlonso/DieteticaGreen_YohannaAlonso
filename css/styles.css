@@ -346,7 +346,7 @@ header .busqueda {
   height: 150px;
 }
 
-.contenedor__aside #sale {
+.contenedor__aside .sale {
   margin: 5px;
   height: 300px;
 }
